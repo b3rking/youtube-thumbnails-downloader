@@ -28,6 +28,7 @@ if (isset($_POST["video_link"])) {
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Daflx - thumbnails downloader</title>
 	<meta name="robots" content="noindex, nofollow">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -37,7 +38,7 @@ if (isset($_POST["video_link"])) {
             <input type="text" class="form-control" placeholder="e.g. https://youtu.be/nb5BHPYbBBY" name="video_link" id="video_link" required>
         </div>
         <div class="mt-3">
-            <button type="submit" class="btn btn-primary">Download</button>
+            <button type="submit" class="btn btn-primary">Fetch thumbnails</button>
         </div>
     </form>
     <?php if (isset($img)) { ?>
@@ -60,5 +61,7 @@ if (isset($_POST["video_link"])) {
     </div>
     
     <?php } ?>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
