@@ -19,6 +19,13 @@ if (isset($_POST["video_link"])) {
     $img["sm"] = $tl_sm_res;
 }
 
+
+/*
+don't copy link from playlist not working
+
+*/
+
+
 ?>
 
 <!DOCTYPE html>
@@ -32,13 +39,14 @@ if (isset($_POST["video_link"])) {
 	<link rel="stylesheet" href="./style.css">
 </head>
 <body>
+	<div class="content">
 	<form action="" method="post">
         <div class="form-group">
             <label for="video_link" class="form-label">YouTube Video Link</label>
             <input type="text" class="form-control" placeholder="e.g. https://youtu.be/nb5BHPYbBBY" name="video_link" id="video_link" required>
         </div>
         <div class="mt-3">
-            <button type="submit" class="btn btn-primary">Fetch thumbnails</button>
+            <button type="submit" class="btn dbtn">Fetch thumbnails</button>
         </div>
     </form>
     <?php if (isset($img)) { ?>
@@ -61,6 +69,7 @@ if (isset($_POST["video_link"])) {
     </div>
     
     <?php } ?>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>

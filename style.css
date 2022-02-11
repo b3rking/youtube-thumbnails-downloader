@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;500;900&display=swap');
+
 * {
 	margin: 0;
 	padding: 0;
@@ -11,4 +13,13 @@ img {
 
 body {
 	padding: 10px 30px;
+	font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+
+.dbtn {
+	color:  yellow;
+	background-color: purple;
+	border-radius: 10px;
+	padding: 3px 15px;
+	font-weight: 500;
 }
