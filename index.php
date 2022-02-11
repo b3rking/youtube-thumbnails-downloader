@@ -40,9 +40,10 @@ don't copy link from playlist not working
 </head>
 <body>
 	<div class="content">
+		<h2>Daflex Youtube Thumbnails Downloader</h2>
 	<form action="" method="post">
         <div class="form-group">
-            <label for="video_link" class="form-label">YouTube Video Link</label>
+            <p class="form-label">Paste your YouTube Video Link <img src="./backhand.svg"></p>
             <input type="text" class="form-control" placeholder="e.g. https://youtu.be/nb5BHPYbBBY" name="video_link" id="video_link" required>
         </div>
         <div class="mt-3">
