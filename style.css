@@ -22,6 +22,13 @@ body {
 	border-radius: 10px;
 	padding: 3px 15px;
 	font-weight: 500;
+	font-size: 18px;
+}
+
+.dbtn:hover {
+	border: 1px solid purple;
+	color: purple;
+	background-color: transparent;
 }
 
 h2 {

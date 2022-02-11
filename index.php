@@ -40,7 +40,7 @@ don't copy link from playlist not working
 </head>
 <body>
 	<div class="content">
-		<h2>Daflex Youtube Thumbnails Downloader</h2>
+		<h2>Daflx Youtube Thumbnails Downloader</h2>
 	<form action="" method="post">
         <div class="form-group">
             <div class="p__svg">
