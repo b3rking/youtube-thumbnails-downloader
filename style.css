@@ -49,3 +49,23 @@ h2 {
 .p__svg p {
 	font-size: 20px;
 }
+
+.dalert {
+	padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 0.03px;
+    margin: 10px 0;
+    border-radius: 0 10px 10px 0;
+}
+
+.dalert-warning {
+	border-left: 7px solid yellow;
+	background-color: rgba(255, 255, 0, 0.2);
+    color: rgb(99, 99, 0);
+}
+
+.dalert-info {
+    border-left: 7px solid purple;
+	background-color: rgba(128, 0, 128, 0.2);
+    color: rgb(61, 0, 61);
+}

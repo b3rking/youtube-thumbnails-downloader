@@ -1,4 +1,11 @@
 <?php
+/**
+ * 
+ * @author b3rking <ishimweeschylebersy@gmail.com>
+ * @package <no-package>
+ * 
+ */
+// simple used to download thumbnails from yt
 
 if (isset($_POST["video_link"])) {
     $video_link = $_POST["video_link"];
@@ -19,13 +26,6 @@ if (isset($_POST["video_link"])) {
     $img["sm"] = $tl_sm_res;
 }
 
-
-/*
-don't copy link from playlist not working
-
-*/
-
-
 ?>
 
 <!DOCTYPE html>
@@ -40,14 +40,18 @@ don't copy link from playlist not working
 </head>
 <body>
 	<div class="content">
-		<h2>Daflx Youtube Thumbnails Downloader</h2>
-		<p>
-			usage for the app
-			- copy link from yt
-			- paste and click on fetch thumbnails
-			- right click on the image and select save image as
-			side note : don't copy a link from a playlist use single video
-		</p>
+		<h2>Daflx Thumbnails Generator</h2>
+		<div class="dalert dalert-info">
+			<h3 class="text-capitalize">usage of the tool</h3>
+			<ul>
+				<li>copy link from youtube (only youtube is supported)</li>
+				<li>paste and click on fetch thumbnails</li>
+				<li>right click on the image and select save image as</li>
+			</ul>
+		</div>
+		<div class="dalert dalert-warning">
+			<p>side note : don't copy a link from a playlist, use single video</p>
+		</div>
 	<form action="" method="post">
         <div class="form-group">
             <div class="p__svg">
@@ -63,16 +67,16 @@ don't copy link from playlist not working
     <?php if (isset($img)) { ?>
     
     <div class="mt-4">
-        <div class="col-12">
-            <div class="col-6 mb-3">
+        <div class="row">
+            <div class="col-12 mb-3">
                 <img src="<?php echo $img["lg"]; ?>" alt="" class="img-fluid">
                 <h5>Max Resolution</h5>
             </div>
-            <div class="col-md-3 mb-3">
+            <div class="col-md-6 mb-3">
                 <img src="<?php echo $img["md"]; ?>" alt="" class="img-fluid">
                 <h5>Medium Resolution</h5>
             </div>
-            <div class="col-md-3 mb-3">
+            <div class="col-md-6 mb-3">
                 <img src="<?php echo $img["sm"]; ?>" alt="" class="img-fluid">
                 <h5>Small Resolution</h5>
             </div>
@@ -83,5 +87,7 @@ don't copy link from playlist not working
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <p style="position: fixed; bottom: 10px;"><a href="https://github.com/b3rking">@b3rking</a>, Daflx Team <script>document.write(new Date().getFullYear());</script></p>
 </body>
 </html>
