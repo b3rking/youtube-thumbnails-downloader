@@ -32,31 +32,33 @@ if (isset($_POST["video_link"])) {
 </head>
 <body>
 	<form action="" method="post">
-                    <div class="form-group">
-                        <label for="video_link" class="form-label">YouTube Video Link</label>
-                        <input type="text" class="form-control" placeholder="e.g. https://youtu.be/nb5BHPYbBBY" name="video_link" id="video_link" required>
-                    </div>
-                    <div class="mt-3">
-                        <button type="submit" class="btn btn-primary">Download</button>
-                    </div>
+        <div class="form-group">
+            <label for="video_link" class="form-label">YouTube Video Link</label>
+            <input type="text" class="form-control" placeholder="e.g. https://youtu.be/nb5BHPYbBBY" name="video_link" id="video_link" required>
+        </div>
+        <div class="mt-3">
+            <button type="submit" class="btn btn-primary">Download</button>
+        </div>
     </form>
-                <?php if (isset($img)) { ?>
-                <div class="mt-4">
-                    <div class="row">
-                        <div class="col-12 mb-3">
-                            <img src="<?php echo $img["lg"]; ?>" alt="" class="img-fluid">
-                            <h5>Max Resulation</h5>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <img src="<?php echo $img["md"]; ?>" alt="" class="img-fluid">
-                            <h5>Medium Resulation</h5>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <img src="<?php echo $img["sm"]; ?>" alt="" class="img-fluid">
-                            <h5>Small Resulation</h5>
-                        </div>
-                    </div>
-                </div>
-                <?php } ?>
+    <?php if (isset($img)) { ?>
+    
+    <div class="mt-4">
+        <div class="row">
+            <div class="col-12 mb-3">
+                <img src="<?php echo $img["lg"]; ?>" alt="" class="img-fluid">
+                <h5>Max Resulation</h5>
+            </div>
+            <div class="col-md-6 mb-3">
+                <img src="<?php echo $img["md"]; ?>" alt="" class="img-fluid">
+                <h5>Medium Resulation</h5>
+            </div>
+            <div class="col-md-6 mb-3">
+                <img src="<?php echo $img["sm"]; ?>" alt="" class="img-fluid">
+                <h5>Small Resulation</h5>
+            </div>
+        </div>
+    </div>
+    
+    <?php } ?>
 </body>
 </html>
